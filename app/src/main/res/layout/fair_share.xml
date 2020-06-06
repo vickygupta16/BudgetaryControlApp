@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fairshareguide"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Fair Share module -\nThis module allows you to add
+N number of contributors name and amount he/she contributed to calculate
+Per Head so that each Contributor has a Fair Share in Contribution"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/contributorsName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Contributors Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/controAmount"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Contribution Amount"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/addControB"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/inverse_button_color"
+            android:gravity="center"
+            android:text="Add Contribution"
+            android:textAllCaps="false"
+            android:textColor="@color/inverse_text_color"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/clearControB"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/inverse_button_color"
+            android:gravity="center"
+            android:text="Clear Contribution"
+            android:textAllCaps="false"
+            android:textColor="@color/inverse_text_color"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/calcFair"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_color"
+            android:gravity="center"
+            android:text="Calculate Fair"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fairsharesteps"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
+            android:text="Fair Share Operation Steps\n1. Input Contributors Name and Amount in respective fields
+and tap on Add Contribution Button each time.\n2. Once you are done inputting
+all data, simply tap on Calculate Fair button.\n3. In case you input wrong data,
+you can tap Clear Contribution button and start again."
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp" />
+    </LinearLayout>
+</ScrollView>

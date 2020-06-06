@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:shadowColor="@color/colorYellow"
+            android:shadowRadius="5"
+            android:text="My Profile"
+            android:textColor="@color/colorBlack"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ogdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fullnametv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Name : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/emailtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Email ID : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/contacttv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Mobile : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/mbtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:height="45dp"
+                    android:gravity="center"
+                    android:text="Budget : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/fullnameet"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorBlue"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/emailet"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorBlue"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/contactet"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorBlue"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/mbet"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorBlue"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="none"
+                    android:text=""
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/updatehs"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/update_button"
+            android:gravity="center"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/update_text"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/profileid"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/updatefirstname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorGreen"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="First Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/updatelastname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorGreen"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Last Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/updatemobile"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorGreen"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Mobile"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/updatebudget"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorGreen"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Monthly Budget"
+                android:inputType="numberDecimal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/set"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/update_button"
+                    android:gravity="center"
+                    android:text="Set"
+                    android:textAllCaps="false"
+                    android:textColor="@color/update_text"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/cancelb"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/update_button"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/update_text"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/allinfo"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_color"
+            android:gravity="center"
+            android:text="Show All Details"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scrolldetails"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/alldeatils"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="25dp" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/logoutbutton"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:background="@drawable/inverse_button_color"
+                android:gravity="center"
+                android:text="Log Out"
+                android:textAllCaps="false"
+                android:textColor="@color/inverse_text_color"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

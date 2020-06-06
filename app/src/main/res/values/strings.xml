@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Budgetary Control App</string>
+    <string name="tab_text_1">Fair Share</string>
+    <string name="tab_text_2">FS History</string>
+    <string name="tab_text_3">Daily Expense</string>
+    <string name="tab_text_4">DE History</string>
+    <string name="tab_text_5">High Expense</string>
+    <string name="tab_text_6">HE History</string>
+    <string name="tab_text_7">My Money</string>
+    <string name="tab_text_8">Profile</string>
+</resources>

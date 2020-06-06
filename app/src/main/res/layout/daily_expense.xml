@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/deguide"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Daily Expense Function -\nThis module allows you to add your
+daily spent money on various purpose.\nAfter adding all expense you can keep a track of how much
+money you spent on which part and can control it by viewing Daily Expense History
+from next Tab."
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/categoryidde"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Category"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/moneyspentde"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Amount Spent"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/addexpensede"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/inverse_button_color"
+            android:gravity="center"
+            android:text="Add Expense"
+            android:textAllCaps="false"
+            android:textColor="@color/inverse_text_color"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/clearexpensede"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/inverse_button_color"
+            android:gravity="center"
+            android:text="Clear Expense"
+            android:textAllCaps="false"
+            android:textColor="@color/inverse_text_color"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/expenselistde"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_color"
+            android:gravity="center"
+            android:text="Generate Expense List"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desteps"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
+            android:text="Daily Expense Operation Steps\n
+1. Input Category and Amount/Money spent on respective category and tap on Add
+Expense button each time.\n
+2. Once you are done inputting all expense, simply tap on Generate Expense List
+button.\n
+3. In case you input wrong data, you can tap Clear Expense button and start again."
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp" />
+    </LinearLayout>
+</ScrollView>

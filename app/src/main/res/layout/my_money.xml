@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mymoneytitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:shadowColor="@color/colorYellow"
+        android:shadowRadius="5"
+        android:text="My Money"
+        android:textColor="@color/colorPurple"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mbmm"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Your Monthly Budget"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp" />
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/trackmm"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="My Money Track"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/stop"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right|bottom"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

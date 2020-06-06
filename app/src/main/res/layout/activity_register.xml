@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/registrationtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:shadowColor="@color/colorYellow"
+            android:shadowRadius="5"
+            android:text="Create Account"
+            android:textColor="@color/colorBlack"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/custom_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/emailIDr"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passwordr"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/monthlybudget"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Monthly Budget"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/registerbutton"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_color"
+            android:gravity="center"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textCursorDrawable="@color/colorPurple"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

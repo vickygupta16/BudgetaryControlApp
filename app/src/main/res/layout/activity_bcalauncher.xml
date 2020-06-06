@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BCALauncher">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/projecttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:shadowColor="@color/colorYellow"
+            android:shadowRadius="5"
+            android:text="Budgetary Control Application"
+            android:textColor="#800080"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/logintext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Already an existing User?"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/loginactivity"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_color"
+            android:gravity="center"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/registertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="New User?"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/registeractivity"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/button_color"
+            android:gravity="center"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
